@@ -17,12 +17,10 @@ const props = defineProps({
 });
 
 const { counter, squareCounter } = useCounter(props.value);
-
 </script>
 
 <style lang="tailwind.css" scoped>
 /*   .button{
     @apply pt-4 bg-blue-500 rounded hover:bg-blue-700 mr-2;
   } */
-
 </style>

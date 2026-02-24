@@ -1,0 +1,35 @@
+<template>
+  <!-- Example Message -->
+  <div v-if="itsMine" class="flex justify-end">
+    <div class="bg-blue-200 text-black p-2 rounded-lg max-w-xs">{{ message }}</div>
+  </div>
+
+  <!-- Example Received Message -->
+  <div v-else class="flex">
+    <div class="bg-gray-300 text-black p-2 rounded-lg max-w-xs">
+      <span class="capitalize">{{ message }}</span>
+      <img
+        v-if="image"
+        v-bind:src="image"
+        alt="YesOrNoAnswer"
+        class="w-52 h-52 object-cover rounded-md"
+      />
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+/* interface Props{
+  message: string,
+  itsMine: boolean,
+  image?: string,
+}
+
+defineProps<Props>(); */
+
+defineProps({
+  message: { type: String, required: true },
+  itsMine: { type: Boolean, required: true },
+  image: { type: String, required: false, default: null },
+});
+</script>

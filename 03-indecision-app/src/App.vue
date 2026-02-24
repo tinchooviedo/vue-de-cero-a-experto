@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-3xl font-bold underline">Contador Wey</h1>
+  <h1 class="text-3xl font-bold">Contador Wey</h1>
   <hr class="my-4" />
   <NumberCounter :value="5"/>
 </template>

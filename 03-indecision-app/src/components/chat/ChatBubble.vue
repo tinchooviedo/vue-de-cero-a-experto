@@ -19,17 +19,18 @@
 </template>
 
 <script lang="ts" setup>
-/* interface Props{
+
+interface Props{
   message: string,
   itsMine: boolean,
   image?: string,
 }
 
-defineProps<Props>(); */
+defineProps<Props>();
 
-defineProps({
+/* defineProps({
   message: { type: String, required: true },
   itsMine: { type: Boolean, required: true },
   image: { type: String, required: false, default: null },
-});
+}); */
 </script>

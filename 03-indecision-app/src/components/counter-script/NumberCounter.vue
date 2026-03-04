@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useCounter } from '@/composables/useCounter';
+import { useCounter } from '@/components/counter-script/useCounter';
 
 const props = defineProps({
   value: { type: Number, required: true },
